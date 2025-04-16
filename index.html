@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio de Fotos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Meu Portfólio de Fotos</h1>
+  </header>
+
+  <section class="gallery">
+    <img src="https://picsum.photos/id/1015/300/200" alt="Imagem 1" onclick="openModal(this)">
+    <img src="https://picsum.photos/id/1016/300/200" alt="Imagem 2" onclick="openModal(this)">
+    <img src="https://picsum.photos/id/1018/300/200" alt="Imagem 3" onclick="openModal(this)">
+    <img src="https://picsum.photos/id/1020/300/200" alt="Imagem 4" onclick="openModal(this)">
+    <img src="https://picsum.photos/id/1024/300/200" alt="Imagem 5" onclick="openModal(this)">
+    <img src="https://picsum.photos/id/1027/300/200" alt="Imagem 6" onclick="openModal(this)">
+  </section>
+
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
